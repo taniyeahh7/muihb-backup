@@ -1,0 +1,34 @@
+import { Button,styled } from "@mui/material";
+import AddIcon from '@mui/icons-material/Add';
+
+const AddFriendsButton=styled(Button)(({theme})=>({
+  backgroundColor:theme.palette.myOtherColour.main,
+        color:"white",
+        margin:5,
+        "&:hover":{
+          backgroundColor:"#818181"
+        }
+}));
+
+function App() {
+  return (
+    <div>
+      <Button variant="text">Text</Button>
+      <Button startIcon={<AddIcon/>} variant="contained" color="secondary" size="small">Add</Button>
+      <Button variant="outlined">Outlined</Button>
+      <Button startIcon={<AddIcon/>} variant="contained" sx={{
+        backgroundColor:"#000000",
+        color:"black",
+        margin:5,
+        "&:hover":{
+          backgroundColor:"#818181"
+        }
+
+      }}>Add friends</Button>
+      <AddFriendsButton startIcon={<AddIcon/>}>Add friend</AddFriendsButton>
+    </div>
+
+  );
+}
+
+export default App;
