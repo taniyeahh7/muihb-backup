@@ -1,3 +1,3 @@
 # muihb-backup
 
-Hostel buddy project backup for frontend code.
+Hostel buddy project backup of frontend code.
